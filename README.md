@@ -1,12 +1,12 @@
 # Preamble
-Test task includes developing of jenkins pipeline.
+Test task includes developing of jenkins pipeline. Please find all supporting files in this repo.
 
 
 # Pipeline requirements
 
 1. should be implemented as a shared library (please create your own repository)
 2. should read `config.yml` file
-3. should run steps according to that file
+3. should run steps according to `config.yaml`
 4. steps to be implemented: `notifications`, `build`, `database`, `deploy`, `test`
 * note1: each step (except `notifications`) should be defined in its own [Stage](https://jenkins.io/doc/pipeline/steps/pipeline-stage-step/)
 * note2: all steps (except `notifications`) are strictly ordered: `build`, `database`, `deploy`, `test`.
