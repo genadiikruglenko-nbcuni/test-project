@@ -5,30 +5,25 @@ notifications:
     on_start: "never"
     on_failure: "always"
     on_success: "always"
-#SCM configuration
-scm:
-  provider: 'github'
-  gitSshUrl: 'git@github.com:<myRepo.git>'
-  credentialsId: 'github-creds'
 #Build configuration
 build:
   projectFolder: 'project'
   buildCommand: "mvn clean test"
+#Database configuration
+database:
+  databaseFolder: 'database'
+  databaseCommand: "mvn clean test -Dscope=FlywayMigration"
 #Deploy configuration
 deploy:
-  deployCommand: "echo 'mvn clean deploy'"
+  deployCommand: "mvn clean install"
 #Test configuration (should be run in parallel)
 test:
 - testFolder: "test"
   name: "performance"
-  testCommand: "mvn clean test -Dscope=performance'"
+  testCommand: "mvn clean test -Dscope=performance"
 - testFolder: "test"
   name: "regression"
   testCommand: "mvn clean test -Dscope=regression; exit 1"
 - testFolder: "test"
   name: "integration"
   testCommand: "mvn clean test -Dscope=integration"
-#Database configuration
-database:
-  databaseFolder: 'database'
-  databaseCommand: "mvn clean test -Dscope=FlywayMigration"
