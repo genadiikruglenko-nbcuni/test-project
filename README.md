@@ -13,6 +13,7 @@ Test task includes developing of jenkins pipeline. Please find all supporting fi
 * note3: if any step is failed, the pipeline should not execute the next step and `notifications` step should be triggered with name of the failed step
 5. all tests (regression, performance, integration) should be run in parallel
 * note: one of tests defined in `config.yaml` contains `exit 1` to simulate error condition
+6. pipeline should be presented as demo
 
 
 # Recommended documentation sources:
