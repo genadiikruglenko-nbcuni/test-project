@@ -3,7 +3,7 @@ Test task includes developing of jenkins pipeline. Please find all supporting fi
 
 # Pipeline requirements
 
-Pipeline should be implemented as a shared library (initial shared library code could be found [here](https://github.com/glebsamsonov-nbcuni/test-pipeline-library)), your code should be added into [Pipeline class](https://github.com/glebsamsonov-nbcuni/test-pipeline-library/blob/master/src/com/example/Pipeline.groovy). 
+Pipeline should be implemented as a shared library (initial shared library code could be found [here](https://github.com/Brialius/test-pipeline-library)), your code should be added into [Pipeline class](https://github.com/Brialius/test-pipeline-library/blob/master/src/com/example/Pipeline.groovy). 
 The pipeline should be able to:
 
 1. read `config.yml` file
