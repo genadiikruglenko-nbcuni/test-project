@@ -21,3 +21,4 @@ The pipeline should be able to:
 * https://jenkins.io/doc/book/pipeline/shared-libraries/
 * https://jenkins.io/doc/pipeline/steps/ 
 * https://github.com/jenkinsci/pipeline-utility-steps-plugin/blob/master/docs/STEPS.md (make sure you installed this plugin)
+* http://groovy-lang.org/syntax.html Groovy syntax
