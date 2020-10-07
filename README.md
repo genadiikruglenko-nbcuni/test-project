@@ -12,6 +12,7 @@ The pipeline should be able to:
     * note1: each step (except `notifications`) should be defined in its own [Stage](https://jenkins.io/doc/pipeline/steps/pipeline-stage-step/)
     * note2: all steps (except `notifications`) are strictly ordered: `build`, `database`, `deploy`, `test`.
     * note3: if any step is failed, the pipeline should not execute the next step and `notifications` step should be triggered with name of the failed step
+    * note4: deploy command should use the same folder as build command
 5. all tests (regression, performance, integration) should run in parallel
     * note: one of tests defined in `config.yaml` contains `exit 1` to simulate error condition
 6. pipeline should be presented as demo
