@@ -40,9 +40,10 @@ The pipeline should be able to:
 - **Do not** send you implementation as a groovy/pdf/word/txt file via email.
 - Your solution should be presented as a Github repository (please create your own private repository or [clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) the initial shared library repository mentioned above) and provide an url. **Do not fork** as it cannot be made private.
 - Your repository (or clone) **must not be public**. Please add the following Github users with read permissions when task is done:
-  - Brialius
-  - genadiikruglenko-nbcuni
-  - evgeniipomnikov-nbcuni
+  - https://github.com/gfonk
+  - https://github.com/Brialius
+  - https://github.com/genadiikruglenko-nbcuni
+  - https://github.com/evgeniipomnikov-nbcuni
 - You may be asked to provide a demo. Be ready to share your screen and show how it works in your test Jenkins environment.
 
 
